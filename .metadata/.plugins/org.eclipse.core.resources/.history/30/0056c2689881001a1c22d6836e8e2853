@@ -1,0 +1,21 @@
+package com.admin;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserLaunch {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\SeleniumDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		extracted(driver);
+		driver.close();
+		driver.quit();
+	}
+
+	private static void extracted(WebDriver driver) {
+		driver.get("https://demoqa.com/automation-practice-form/");
+	}
+
+}

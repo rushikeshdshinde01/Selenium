@@ -1,0 +1,14 @@
+package com.admin;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserLaunch {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\SeleniumDriver\\chromedriver.exe");
+		Webdriver driver=new ChromeDriver();
+
+	}
+
+}

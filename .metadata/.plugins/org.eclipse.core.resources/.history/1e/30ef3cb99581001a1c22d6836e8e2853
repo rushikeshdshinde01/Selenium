@@ -1,0 +1,12 @@
+package com.admin;
+
+public class BrowserLaunch {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\SeleniumDriver\\chromedriver.exe");
+		Webdriver driver=new ChromeDriver();
+
+	}
+
+}
